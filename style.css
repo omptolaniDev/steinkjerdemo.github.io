@@ -271,7 +271,7 @@
      width: 650px;
      height: 60px;
      z-index: 2;
-     animation: color 5s ease-in-out infinite;
+     animation: color 3s ease-in-out infinite;
      background-size: 400%;
  }
 
@@ -1320,4 +1320,5 @@
          width: 50%;
          /* Two cards per row on medium screens */
      }
+
  }
