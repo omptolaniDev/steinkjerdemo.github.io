@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steinkjer Bilformidling</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS FILE  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Top bar with contact info and discount -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <span><i class="fas fa-phone-alt me-1"></i> +47 98827640</span>
+          <span><i class="far fa-envelope ms-3 me-1"></i> tommyderaas@steinkjerbilformidling.net</span>
+          <span class="discount-badge">Fa 30% rabatt na! Bruk kode FORGED</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark luxury-navbar ">
+    <div class="container pd-0">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold" href="#" data-lang="brand">
+        Steinkjer Bilformidling
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" data-lang="home">Hjem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-lang="cars">Biler til salgs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-lang="wheels">Aventador Wheels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-lang="services">Tjenester</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-lang="gallery">Galleri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-lang="contact">Kontakt</a>
+          </li>
+        </ul>
+
+        <!-- Right Side -->
+        <div class="d-flex align-items-center gap-3 pd-0 ml-5">
+          <!-- Language Selector -->
+          <div class="lang-selector d-flex align-items-center" id="langBtn">
+            <span class="lang-icon"><i class="fa-solid fa-language"></i></span>
+            <span class="ms-1" id="langCode">EN</span>
+          </div>
+
+          <!-- Ring Oss Button -->
+          <a href="#" class="btn btn-outline-gold" data-lang="call">Ring Oss</a>
+
+          <!-- Se Biler Button -->
+          <a href="#" class=" btn-outline-golde" data-lang="seeCars">Se Biler</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-7 col-md-12 p-0 text-light">
+          <h1 class="fw-bold">Steinkjer</h1>
+          <div class="linear-animation"></div>
+          <h3 class="fw-light">Vi hjelper deg å finne din perfekte bil og de ultimate drømmefelgene!</h1>
+          <p class="lead mt-3 " style="color: #ffb400;">
+            Steinkjer Bilformidling kombinerer ekspertise innen bilsalg med eksklusiv
+            <b> Aventador Wheels </b>kolleksjon.
+            Fra luksus superbiler til custom forged felger – vi leverer kvalitet og eksklusivitet.
+          </p>
+
+          <!-- Trust Badges -->
+          <div class="d-flex flex-wrap gap-4 mt-4">
+            <div class="badge-item">
+              <span class="icon"><i class="fa-solid fa-star"></i></span>
+              <span>500+ Fornøyde Kunder</span>
+            </div>
+            <div class="badge-item">
+              <span class="icon"><i class="fa-solid fa-globe"></i></span>
+              <span>Levering Globalt</span>
+            </div>
+            <div class="badge-item">
+              <span class="icon"><i class="fa-solid fa-trophy"></i></span>
+              <span>Premium Kvalitet</span>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-4 d-flex gap-3">
+            <a href="#" class="btn btn-gold">Se Våre Biler <i class="fa-solid fa-arrow-right"></i></a>
+            <!-- <button class="btn btn-aventador">
+                    Aventador Wheels
+            </button> -->
+            <a href="#" class="btn btn-aventador btn-sm">Aventador Wheels</a>
+          </div>
+        </div>
+
+        <!-- Right Floating Card -->
+        <div class="col-lg-5 col-md-12 d-flex justify-content-end ">
+          <div class="stock-card shadow-lg">
+            <h5 class="text-warning fw-bold fs-5">Nytt på lager:</h5>
+            <p>Lamborghini Huracán med Forged Titanium Gloss Black felger</p>
+          </div>
+        </div>
+      </div>
+      <!-- Icon -->
+      <div class="container d-flex justify-content-center my-5 my-row">
+        <div class="icon-container">
+          <div class="d-flex justify-content-center">
+            <div class="custom-icon-wrapper">
+              <i class="bi bi-three-dots-vertical"></i><!-- You can change this to any Font Awesome icon -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="main-container d-flex flex-column justify-content-center align-items-center text-center">
+    <span class="badge bg-secondary mb-4">Bilsalg & Formidling</span>
+    <h1 class="display-3 fw-bold text-white mb-3">Premium Biler til <br> <span>Salgs</span></h1>
+    <p class="lead text-white-50 mb-5">Utvalgte luksusbiler levert med Aventador Wheels - tilpasset for perfekt passform
+      og stil.</p>
+
+    <div class="input-group search-bar mb-4">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="form-control" placeholder="Søk etter bil eller felgmodell...">
+      <button class="btn btn-warning" type="button">Søk</button>
+    </div>
+
+    <!-- Cards Section -->
+    <section class="features-section py-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+          <!-- Card 1: Vi kjøper din bil -->
+          <div class="col">
+            <div class="feature-card h-100 text-center p-4">
+              <div class="icon-circle mb-4">
+                <i class="bi bi-heart"></i>
+              </div>
+              <h3 class="card-title text-white ">Vi kjøper din bil</h3>
+              <p class="card-text text-white-50 ">Får du den beste prisen for din bil. Rask og profesjonell vurdering.
+              </p>
+              <ul class="list-unstyled text-start feature-list mb-5">
+                <li><i class="bi bi-check-circle "></i> Rask vurdering</li>
+                <li><i class="bi bi-check-circle"></i> Konkurransedyktige priser</li>
+                <li><i class="bi bi-check-circle"></i> Enkelt prosess</li>
+              </ul>
+              <button class="btn btn-primary custom-btn mt-auto">Les Mer</button>
+            </div>
+          </div>
+
+          <!-- Card 2: Vi selger din bil -->
+          <div class="col">
+            <div class="feature-card h-100 text-center p-4">
+              <div class="icon-circle mb-4">
+                <i class="bi bi-lightning"></i>
+              </div>
+              <h3 class="card-title text-white ">Vi selger din bil</h3>
+              <p class="card-text text-white-50 ">Lar oss selge din bil for deg. Full service fra A til Å.</p>
+              <ul class="list-unstyled text-start feature-list mb-5">
+                <li><i class="bi bi-check-circle "></i> Profesjonell markedsføring</li>
+                <li><i class="bi bi-check-circle "></i> Håndterer alt papirarbeid</li>
+                <li><i class="bi bi-check-circle "></i> Maksimal salgspris</li>
+              </ul>
+              <button class="btn btn-primary custom-btn mt-auto">Les Mer</button>
+            </div>
+          </div>
+
+          <!-- Card 3: Finansiering -->
+          <div class="col">
+            <div class="feature-card h-100 text-center p-4">
+              <div class="icon-circle mb-4">
+                <i class="bi bi-question-circle"></i>
+              </div>
+              <h3 class="card-title text-white mb-3">Finansiering</h3>
+              <p class="card-text text-white-50 mb-4">Konkurransedyktige lånebetignelser og finansieringsløsninger.</p>
+              <ul class="list-unstyled text-start feature-list mb-5">
+                <li><i class="bi bi-check-circle"></i> Lave renter</li>
+                <li><i class="bi bi-check-circle"></i> Fleksible betingelser</li>
+                <li><i class="bi bi-check-circle"></i> Rask behandling</li>
+              </ul>
+              <button class="btn btn-primary custom-btn mt-auto">Les Mer</button>
+            </div>
+          </div>
+
+          <!-- Card 4: Rådgivning -->
+          <div class="col">
+            <div class="feature-card h-100 text-center p-4">
+              <div class="icon-circle mb-4">
+                <i class="bi bi-shield"></i>
+              </div>
+              <h3 class="card-title text-white mb-3">Rådgivning</h3>
+              <p class="card-text text-white-50 mb-4">Ekspertråd for ditt bilkjøp og felgvalg.</p>
+              <ul class="list-unstyled text-start feature-list mb-5">
+                <li><i class="bi bi-check-circle"></i> Personlig rådgivning</li>
+                <li><i class="bi bi-check-circle"></i> Markedsinnsikt</li>
+                <li><i class="bi bi-check-circle"></i> Kvalitetssikring</li>
+              </ul>
+              <button class="btn btn-primary custom-btn mt-auto">Les Mer</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Luxury-Cars Section -->
+  <section class="luxury-cars-section py-5">
+    <div class="container">
+      <!-- Title Row -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="section-title">Utvalgte Biler med <span style="color: #ffb400;"> Aventador Wheels </span></h2>
+        <a href="#" class="btn btn-dark see-all-btn">Se Alle Biler</a>
+      </div>
+
+      <!-- Car Cards -->
+      <div class="row g-4">
+        <!-- Car 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="car-card shadow-lg">
+            <div class="car-image">
+              <img src="images/car1.jpg" class="img-fluid" alt="Lamborghini">
+              <span class="tag new">Nytt på lager</span>
+              <span class="tag premium"><i class="bi bi-star-fill"></i> Premium</span>
+            </div>
+            <div class="car-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="car-name">Lamborghini</h5>
+                <span class="car-year">2023</span>
+              </div>
+              <h6 class="car-model">Huracán Spyder</h6>
+              <ul class="car-specs">
+                <li><strong>Merke:</strong> <span>Aventador Wheels</span> </li>
+                <li><strong>Felgmodell:</strong><span>Forged Titan Gloss Black</span> </li>
+                <li><strong>Størrelse:</strong> <span>20x8.5 ET42 og 20x11 ET40</span> </li>
+                <li><strong>Kilometerstand:</strong><span>2,500 km</span> </li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="car-price">3,200,000 NOK</span>
+                <a href="#" class="btn btn-gold">Se Detaljer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="car-card shadow-lg">
+            <div class="car-image">
+              <img src="images/car2.jpg" class="img-fluid" alt="Ferrari">
+              <span class="tag klassiker">Klassiker</span>
+              <span class="tag premium"><i class="bi bi-star-fill"></i> Premium</span>
+            </div>
+            <div class="car-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="car-name">Ferrari</h5>
+                <span class="car-year">2022</span>
+              </div>
+              <h6 class="car-model">458 Italia</h6>
+              <ul class="car-specs">
+                <li><strong>Merke:</strong><span> Aventador Wheels</span> </li>
+                <li><strong>Felgmodell:</strong><span> Gold Edition Limited</span> </li>
+                <li><strong>Størrelse:</strong><span> 19x8.5 ET45 og 19x10 ET35</span> </li>
+                <li><strong>Kilometerstand:</strong><span> 8,200 km</span> </li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="car-price">1,850,000 NOK</span>
+                <a href="#" class="btn btn-gold">Se Detaljer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="car-card shadow-lg">
+            <div class="car-image">
+              <img src="images/car3.jpg" class="img-fluid" alt="Porsche">
+              <span class="tag new">Premium</span>
+              <span class="tag premium"><i class="bi bi-star-fill"></i> Premium</span>
+            </div>
+            <div class="car-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="car-name">Porsche</h5>
+                <span class="car-year">2023</span>
+              </div>
+              <h6 class="car-model">911 Turbo S</h6>
+              <ul class="car-specs">
+                <li><strong>Merke:</strong><span> Aventador Wheels</span></li>
+                <li><strong>Felgmodell:</strong><span> Carbon Fiber Series</span></li>
+                <li><strong>Størrelse:</strong><span> 21x9 ET35 og 21x12 ET25</span></li>
+                <li><strong>Kilometerstand:</strong><span> 1,200 km</span></li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="car-price">2,400,000 NOK</span>
+                <a href="#" class="btn btn-gold">Se Detaljer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- car 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="car-card shadow-lg">
+            <div class="car-image">
+              <img src="images/car4.jpg" class="img-fluid" alt="BMW">
+              <span class="tag new">Sport</span>
+              <span class="tag premium"><i class="bi bi-star-fill"></i> Premium</span>
+            </div>
+            <div class="car-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="car-name">BMW</h5>
+                <span class="car-year">2023</span>
+              </div>
+              <h6 class="car-model">M4 Competition</h6>
+              <ul class="car-specs">
+                <li><strong>Merke:</strong><span> Aventador Wheels</span></li>
+                <li><strong>Felgmodell:</strong><span> Matt Black Performance</span></li>
+                <li><strong>Størrelse:</strong><span> 20x9 ET40 og 20x11.5 ET30</span></li>
+                <li><strong>Kilometerstand:</strong><span> 5,800 km</span></li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="car-price">1,200,000 NOK</span>
+                <a href="#" class="btn btn-gold">Se Detaljer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Car 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="car-card shadow-lg">
+            <div class="car-image">
+              <img src="images/car5.jpg" class="img-fluid" alt="Audi">
+              <span class="tag new">Luxury</span>
+              <span class="tag premium"><i class="bi bi-star-fill"></i> Premium</span>
+            </div>
+            <div class="car-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="car-name">Audi</h5>
+                <span class="car-year">2022</span>
+              </div>
+              <h6 class="car-model">R8 V10 Plus</h6>
+              <ul class="car-specs">
+                <li><strong>Merke:</strong><span> Aventador Wheels </span></li>
+                <li><strong>Felgmodell:</strong> <span> Brushed Titanium</span></li>
+                <li><strong>Størrelse:</strong> <span>21x8.5 ET35 og 21x12 ET28 </span></li>
+                <li><strong>Kilometerstand:</strong> <span> 12,400 km </span></li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="car-price">1,900,000 NOK</span>
+                <a href="#" class="btn btn-gold">Se Detaljer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- car-6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="car-card shadow-lg">
+            <div class="car-image">
+              <img src="images/car6.jpg" class="img-fluid" alt="McLaren">
+              <span class="tag new">Classy</span>
+              <span class="tag premium"><i class="bi bi-star-fill"></i> Premium</span>
+            </div>
+            <div class="car-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="car-name">McLaren</h5>
+                <span class="car-year">2021</span>
+              </div>
+              <h6 class="car-model">570s</h6>
+              <ul class="car-specs">
+                <li><strong>Merke:</strong> <span>Aventador Wheels</span></li>
+                <li><strong>Felgmodell:</strong> <span> Chrome Elite</span></li>
+                <li><strong>Størrelse:</strong><span> 19x9 ET42 og 19x10.5 ET25</span></li>
+                <li><strong>Kilometerstand:</strong><span> 18,200 km </span></li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="car-price">2,100,000 NOK</span>
+                <a href="#" class="btn btn-gold">Se Detaljer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+
+      <div class="text-center mt-5">
+        <button class="btn btn-contact">Kontakt Oss</button>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 text-center text-white bg-dark-custom">
+    <div class="container">
+      <span class="badge bg-gold-outline text-gold mb-4">Aventador Wheels Kolleksjon</span>
+      <h1 class="display-3 fw-bold text-gold-accent mb-4">Custom-Made for <br> Perfect Fit and Style</h1>
+      <p class="lead mb-0 text-white-75 px-lg-5">
+        Vi spesialiserer oss på premium biler som Lamborghini, Ferrari, Porsche, Audi, BMW og mer. Alle felger er
+        håndlaget med norsk design og trusted worldwide.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2: Product Cards -->
+  <section class="py-5 bg-dark-custom">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Product Card 1 -->
+        <div class="col">
+          <div class="card h-100 product-card bg-dark-card border-0">
+            <span class="tag klassiker">Most Popular</span>
+            <img src="images/rim-3.jpeg" class="card-img-top p-3" alt="Forged Titan Gloss Black Wheels">
+            <div class="card-body">
+              <h5 class="card-title text-white">Forged Titan Gloss Black</h5>
+              <p class="card-text text-white-75">20x8.5 ET42 og 20x11 ET40</p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <span class="tag-badge">Custom forged</span>
+                <span class="tag-badge">Lett vekt</span>
+                <span class="tag-badge">Premium finish</span>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center bg-transparent border-0 pt-0 pb-3 px-3">
+              <span class="fs-4 fw-bold text-gold">Fra 35,000 NOK</span>
+              <a href="#" class="btn btn-gold">Se Detaljer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="col">
+          <div class="card h-100 product-card bg-dark-card border-0">
+            <span class="tag klassiker">Premium</span>
+            <img src="images/rim-4.png" class="card-img-top p-3" alt="Carbon Fiber Series Wheels">
+            <div class="card-body">
+              <h5 class="card-title text-white">Carbon Fiber Series</h5>
+              <p class="card-text text-white-75">21x9 ET35 og 21x12 ET25</p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <span class="tag-badge">Carbon fiber</span>
+                <span class="tag-badge">Ultra lett</span>
+                <span class="tag-badge">Aerodynamisk</span>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center bg-transparent border-0 pt-0 pb-3 px-3">
+              <span class="fs-4 fw-bold text-gold">Fra 55,000 NOK</span>
+              <a href="#" class="btn btn-gold">Se Detaljer</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="col">
+          <div class="card h-100 product-card bg-dark-card border-0">
+            <span class="tag klassiker">Limitert</span>
+            <img src="images/rim-4.png" class="card-img-top p-3" alt="Carbon Fiber Series Wheels">
+            <div class="card-body">
+              <h5 class="card-title text-white">Carbon Fiber Series</h5>
+              <p class="card-text text-white-75">21x9 ET35 og 21x12 ET25</p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <span class="tag-badge">Carbon fiber</span>
+                <span class="tag-badge">Ultra lett</span>
+                <span class="tag-badge">Aerodynamisk</span>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center bg-transparent border-0 pt-0 pb-3 px-3">
+              <span class="fs-4 fw-bold text-gold">Fra 55,000 NOK</span>
+              <a href="#" class="btn btn-gold">Se Detaljer</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="col">
+          <div class="card h-100 product-card bg-dark-card border-0">
+            <span class="tag klassiker">Sport</span>
+            <img src="images/rim-4.png" class="card-img-top p-3" alt="Carbon Fiber Series Wheels">
+            <div class="card-body">
+              <h5 class="card-title text-white">Carbon Fiber Series</h5>
+              <p class="card-text text-white-75">21x9 ET35 og 21x12 ET25</p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <span class="tag-badge">Carbon fiber</span>
+                <span class="tag-badge">Ultra lett</span>
+                <span class="tag-badge">Aerodynamisk</span>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center bg-transparent border-0 pt-0 pb-3 px-3">
+              <span class="fs-4 fw-bold text-gold">Fra 55,000 NOK</span>
+              <a href="#" class="btn btn-gold">Se Detaljer</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 5 -->
+        <div class="col">
+          <div class="card h-100 product-card bg-dark-card border-0">
+            <span class="tag klassiker">Luxury</span>
+            <img src="images/rim-4.png" class="card-img-top p-3" alt="Carbon Fiber Series Wheels">
+            <div class="card-body">
+              <h5 class="card-title text-white">Carbon Fiber Series</h5>
+              <p class="card-text text-white-75">21x9 ET35 og 21x12 ET25</p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <span class="tag-badge">Carbon fiber</span>
+                <span class="tag-badge">Ultra lett</span>
+                <span class="tag-badge">Aerodynamisk</span>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center bg-transparent border-0 pt-0 pb-3 px-3">
+              <span class="fs-4 fw-bold text-gold">Fra 55,000 NOK</span>
+              <a href="#" class="btn btn-gold">Se Detaljer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="col">
+          <div class="card h-100 product-card bg-dark-card border-0">
+            <span class="tag klassiker">Classic</span>
+            <img src="images/rim-5.jpeg" class="card-img-top p-3" alt="Gold Edition Limited Wheels">
+            <div class="card-body">
+              <h5 class="card-title text-white">Gold Edition Limited</h5>
+              <p class="card-text text-white-75">19x8.5 ET45 og 19x10 ET35</p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <span class="tag-badge">Gulf finish</span>
+                <span class="tag-badge">Håndlaget</span>
+                <span class="tag-badge">Eksklusiv design</span>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center bg-transparent border-0 pt-0 pb-3 px-3">
+              <span class="fs-4 fw-bold text-gold">Fra 42,000 NOK</span>
+              <a href="#" class="btn btn-gold">Se Detaljer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Features/Services -->
+  <section class="py-5 text-center bg-dark-custom">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <!-- Feature 1 -->
+        <div class="col-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon-wrapper mb-3">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h5 class="text-warning" >Livstidsgaranti</h5>
+            <p class="text-white-75 small mb-0">Full garanti på alle forged felger</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon-wrapper mb-3">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h5 class="text-warning">Gratis Levering</h5>
+            <p class="text-white-75 small mb-0">Leveransekostnader inkludert i Norge</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon-wrapper mb-3">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h5 class="text-warning">Custom Design</h5>
+            <p class="text-white-75 small mb-0">Tilpassede løsninger for din bil</p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="col-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon-wrapper mb-3">
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="text-warning">Premium Service</h5>
+            <p class="text-white-75 small mb-0">Profesjonell montering og balansering</p>
+          </div>
+        </div>
+      </div>
+      <Br></Br>
+      <Br></Br>
+      <button class="btn btn-contact">Se Hele Kolleksjon</button>
+    </div>
+  </section>
+<!-- Newsletter Section -->
+ <section class="newsletter-section text-center py-5">
+    <div class="container">
+        <h2 class="section-title mb-3">Hold deg oppdatert på <span style="color: #ffb400;"> nye ankomster </span></h2>
+        <p class="section-description lead mb-5">Få eksklusive tilbud, nyheter om nye bilmodeller og Aventador Wheels kolleksjoner</p>
+        <form class="newsletter-form d-flex justify-content-center">
+            <div class="input-group">
+                <input type="email" class="form-control newsletter-input" placeholder="Din e-postadresse">
+            </div>
+            <button class="btn btn-subscribe d-flex align-items-center" type="submit">
+                    Abonner <i class="bi bi-arrow-right ms-2"></i>
+                </button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-section">
+  <div class="container-fluid px-0">
+    <div class="row mx-0 px-5"> 
+      
+      <!-- Left Section -->
+      <div class="col-lg-5 col-md-6 mb-4 footer-about">
+        <h4 class="footer-logo">Steinkjer Bilformidling</h4>
+        <p class="footer-desc">
+          Norsk design, trusted worldwide. Vi kombinerer ekspertise innen bilsalg 
+          med eksklusiv Aventador Wheels kolleksjon for den ultimate bilopplevelsen.
+        </p>
+        <ul class="footer-contact list-unstyled">
+          <li><i class="bi bi-telephone-fill"></i> +47 98827640</li>
+          <li><i class="bi bi-envelope-fill"></i> tommyderaas@steinkjerbilformidling.net</li>
+          <li><i class="bi bi-geo-alt-fill"></i> Steinkjer, Norge</li>
+          <li><i class="bi bi-clock-fill"></i> Man-Fre: 08:00–17:00</li>
+        </ul>
+        <div class="footer-social">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- About Links -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-title">Om Oss</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">Hjem</a></li>
+          <li><a href="#">Biler til salgs</a></li>
+          <li><a href="#">Aventador Wheels</a></li>
+          <li><a href="#">Tjenester</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <!-- Aventador Wheels -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="footer-title">Aventador Wheels</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">Forged Titan Gloss Black</a></li>
+          <li><a href="#">Carbon Fiber Series</a></li>
+          <li><a href="#">Gold Edition Limited</a></li>
+          <li><a href="#">Matte Black Performance</a></li>
+          <li><a href="#">Brushed Titanium</a></li>
+          <li><a href="#">Street Chrome Elite</a></li>
+        </ul>
+      </div>
+
+      <!-- Our Services -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-title">Våre Tjenester</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">Lamborghini</a></li>
+          <li><a href="#">Ferrari</a></li>
+          <li><a href="#">Porsche</a></li>
+          <li><a href="#">Audi</a></li>
+          <li><a href="#">BMW</a></li>
+          <li><a href="#">Mercedes-Benz</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap px-5">
+      <p class="mb-0">
+        © 2024 Steinkjer Bilformidling. Alle rettigheter forbeholdt.
+      </p>
+      <ul class="footer-policy list-inline mb-0">
+        <li class="list-inline-item"><a href="#">Personvern</a></li>
+        <li class="list-inline-item"><a href="#">Vilkår</a></li>
+        <li class="list-inline-item"><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="translate.js"></script>
+</body>
+
+</html>
